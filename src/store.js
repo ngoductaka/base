@@ -4,12 +4,10 @@ import { persistStore } from 'redux-persist';
 import { persistReducer, FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER } from 'redux-persist'
 
 // import slide
-import home from './page/monitor/state';
 import app from './app_state/login';
 import app_permission from './app_state/app_permission';
 // REDUX
 const rootReducer = combineReducers({
-  home,
   app,
   app_permission,
 })
